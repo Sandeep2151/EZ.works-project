@@ -1,70 +1,50 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#EZ works project using ReactJs
 
-In the project directory, you can run:
+Overview
 
-### `npm start`
+This project is a single-page web application built using ReactJs, without Bootstrap. The application features a simple form that integrates with the provided API. The design is based on the Adobe XD design shared with the developer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+API Information
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Documentation Link: http://34.225.132.160:8002/docs
+API Link: http://34.225.132.160:8002/api
+Required Variables: email
+Request: POST
+Responsive Design
 
-### `npm test`
+The application is designed to be responsive and has been tested on the following devices:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+480p (Mobile View)
+720p
+1080p
+2732x2048 (iPad)
+1440x823 (MacBook)
+API Integration Use Cases
 
-### `npm run build`
+Empty Form Submission: Not allowed (Validation at Front-End)
+Email Validation: Validation at Front-End
+Error Handling: An error will be returned in API Response when the email ends with @ez.works. Display that error inside the form field.
+Example: bhavya@ez.works ---> response code 422
+Example: bhavya@abc.com ---> form submitted
+Form Submission: The form is submitted successfully, API will return 200 in Response, and “Form Submitted” will be displayed in the text field.
+Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The design of the application is based on the Adobe XD design shared with the developer. The design includes both mobile and desktop views.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get started with this project, follow these steps:
 
-### `npm run eject`
+Clone the repository using git clone (https://github.com/Sandeep2151/VS-CODE-PROJECTS.git)
+Install the dependencies using npm install
+Start the application using npm start
+Open the application in your web browser using http://localhost:3000
+Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the LICENSE file for details.
